@@ -1,0 +1,85 @@
+table citiz_32c_predictions
+	lineageTag: cd6495f1-310a-4c61-a18f-e7c267ff74b6
+	sourceLineageTag: [gold].[citiz_32c_predictions]
+
+	column candidate_id
+		dataType: string
+		lineageTag: 389497ee-224d-4991-af88-a054d79de121
+		sourceLineageTag: candidate_id
+		summarizeBy: none
+		sourceColumn: candidate_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column population_predite_ml_5min
+		dataType: double
+		lineageTag: 5af9a9e3-afd2-4d9f-acfd-120099edf76c
+		sourceLineageTag: population_predite_ml_5min
+		summarizeBy: sum
+		sourceColumn: population_predite_ml_5min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hors_distribution_population
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 5e54aa15-7d4f-4307-a9b3-811f7910b257
+		sourceLineageTag: hors_distribution_population
+		summarizeBy: none
+		sourceColumn: hors_distribution_population
+
+		annotation SummarizationSetBy = Automatic
+
+	column pop_direct_360
+		dataType: double
+		lineageTag: a5d709fd-1fde-4583-bc25-95347487f46b
+		sourceLineageTag: pop_direct_360
+		summarizeBy: sum
+		sourceColumn: pop_direct_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_direct_800
+		dataType: double
+		lineageTag: 1e1baeec-aa54-486d-9afa-6736ad712328
+		sourceLineageTag: pop_direct_800
+		summarizeBy: sum
+		sourceColumn: pop_direct_800
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_sans_option_360
+		dataType: double
+		lineageTag: f5ed8953-49f4-4147-b84b-236e2db2788d
+		sourceLineageTag: pop_sans_option_360
+		summarizeBy: sum
+		sourceColumn: pop_sans_option_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_sans_autopartage_360
+		dataType: double
+		lineageTag: b2f085df-6513-4230-99c9-3dad7b90a45d
+		sourceLineageTag: pop_sans_autopartage_360
+		summarizeBy: sum
+		sourceColumn: pop_sans_autopartage_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition citiz_32c_predictions = entity
+		mode: directLake
+		source
+			entityName: citiz_32c_predictions
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

@@ -1,0 +1,155 @@
+table france_stations_arrets_5min_population_desservie_clean
+	lineageTag: ce572bc2-93f8-41c5-9e04-a1d2bba3b643
+	sourceLineageTag: [gold].[france_stations_arrets_5min_population_desservie_clean]
+
+	column unique_id
+		dataType: string
+		lineageTag: f169935a-d33c-4ef2-a564-38774b4238a5
+		sourceLineageTag: unique_id
+		summarizeBy: none
+		sourceColumn: unique_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column categorie
+		dataType: string
+		lineageTag: 0c72d10e-d14c-4f4c-9421-9c7cc14bd24a
+		sourceLineageTag: categorie
+		summarizeBy: none
+		sourceColumn: categorie
+
+		annotation SummarizationSetBy = Automatic
+
+	column territoire
+		dataType: string
+		lineageTag: 1f38c209-2a33-401c-a74a-3f76c70b61b8
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		lineageTag: 44115fc7-5fd3-435b-9c68-bdbc1915baae
+		sourceLineageTag: latitude
+		summarizeBy: sum
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column longitude
+		dataType: double
+		lineageTag: f555c128-de4b-4fe8-9536-60a83cf94394
+		sourceLineageTag: longitude
+		summarizeBy: sum
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_desservie_5min
+		dataType: double
+		lineageTag: 21c0880d-7fd7-47f2-8932-bf01a1836cc6
+		sourceLineageTag: population_desservie_5min
+		summarizeBy: sum
+		sourceColumn: population_desservie_5min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_carreaux_desservis
+		dataType: int64
+		formatString: 0
+		lineageTag: 861181f2-ba29-4f86-a97b-7425852bee65
+		sourceLineageTag: nb_carreaux_desservis
+		summarizeBy: sum
+		sourceColumn: nb_carreaux_desservis
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_tuiles_rattachees
+		dataType: int64
+		formatString: 0
+		lineageTag: f8bc69ae-50c5-48ae-9fa2-e2bf203f8825
+		sourceLineageTag: nb_tuiles_rattachees
+		summarizeBy: sum
+		sourceColumn: nb_tuiles_rattachees
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_tuiles_non_rattachees
+		dataType: int64
+		formatString: 0
+		lineageTag: bc012539-4d2a-430b-9cfe-8e8bc5f1e972
+		sourceLineageTag: nb_tuiles_non_rattachees
+		summarizeBy: sum
+		sourceColumn: nb_tuiles_non_rattachees
+
+		annotation SummarizationSetBy = Automatic
+
+	column nom
+		dataType: string
+		lineageTag: 6424f57e-c195-4d88-8e42-c4d6ec87318d
+		sourceLineageTag: nom
+		summarizeBy: none
+		sourceColumn: nom
+
+		annotation SummarizationSetBy = Automatic
+
+	column operateur
+		dataType: string
+		lineageTag: 47ad8bda-ed08-4131-bbc0-6257d068c95a
+		sourceLineageTag: operateur
+		summarizeBy: none
+		sourceColumn: operateur
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_calcul
+		dataType: string
+		lineageTag: 016922d4-ad7f-41c6-b543-7e1a8d8e9b95
+		sourceLineageTag: statut_calcul
+		summarizeBy: none
+		sourceColumn: statut_calcul
+
+		annotation SummarizationSetBy = Automatic
+
+	column methode
+		dataType: string
+		lineageTag: a94a06b0-40c0-47b3-9986-63a521ebaea8
+		sourceLineageTag: methode
+		summarizeBy: none
+		sourceColumn: methode
+
+		annotation SummarizationSetBy = Automatic
+
+	column qualite_operateur
+		dataType: string
+		lineageTag: 21575023-81c8-4fb3-bd0b-d8341079bc47
+		sourceLineageTag: qualite_operateur
+		summarizeBy: none
+		sourceColumn: qualite_operateur
+
+		annotation SummarizationSetBy = Automatic
+
+	column operateur_affiche
+		dataType: string
+		lineageTag: 4d769b7c-4700-4667-bfbc-842d128b0358
+		sourceLineageTag: operateur_affiche
+		summarizeBy: none
+		sourceColumn: operateur_affiche
+
+		annotation SummarizationSetBy = Automatic
+
+	partition france_stations_arrets_5min_population_desservie_clean = entity
+		mode: directLake
+		source
+			entityName: france_stations_arrets_5min_population_desservie_clean
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

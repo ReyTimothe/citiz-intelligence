@@ -1,0 +1,74 @@
+table citiz_32e_dashboard_kpi
+	lineageTag: 3a42885e-076d-4ae4-b1a1-ab384308e27b
+	sourceLineageTag: [gold].[citiz_32e_dashboard_kpi]
+
+	column budget_eur
+		dataType: double
+		lineageTag: 6f477a9f-9362-42d0-9064-de0d75b23707
+		sourceLineageTag: budget_eur
+		summarizeBy: sum
+		sourceColumn: budget_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column territoire
+		dataType: string
+		lineageTag: e2aac406-348b-46cf-ae42-c2dbb5721607
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column sites_retenus
+		dataType: int64
+		formatString: 0
+		lineageTag: 3f5e4714-81bf-45c9-b315-56dec3506740
+		sourceLineageTag: sites_retenus
+		summarizeBy: sum
+		sourceColumn: sites_retenus
+
+		annotation SummarizationSetBy = Automatic
+
+	column cout_hypothetique_total_eur
+		dataType: double
+		lineageTag: 7e57dc84-04d5-4512-9120-b92275fb4887
+		sourceLineageTag: cout_hypothetique_total_eur
+		summarizeBy: sum
+		sourceColumn: cout_hypothetique_total_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_nouvellement_couverte
+		dataType: double
+		lineageTag: 749dc412-a22c-494f-a9db-08676ac64d2f
+		sourceLineageTag: population_nouvellement_couverte
+		summarizeBy: sum
+		sourceColumn: population_nouvellement_couverte
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column habitants_gagnant_autopartage
+		dataType: double
+		lineageTag: 5b3d11f2-b22e-40f0-9f70-be92912eb66e
+		sourceLineageTag: habitants_gagnant_autopartage
+		summarizeBy: sum
+		sourceColumn: habitants_gagnant_autopartage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition citiz_32e_dashboard_kpi = entity
+		mode: directLake
+		source
+			entityName: citiz_32e_dashboard_kpi
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

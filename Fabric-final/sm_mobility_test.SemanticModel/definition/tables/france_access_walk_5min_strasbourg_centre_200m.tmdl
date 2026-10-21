@@ -1,0 +1,220 @@
+table france_access_walk_5min_strasbourg_centre_200m
+	lineageTag: 0b9ea131-3481-4e54-b24c-4a619188e55c
+	sourceLineageTag: [gold].[france_access_walk_5min_strasbourg_centre_200m]
+
+	column idcar_200m
+		dataType: string
+		lineageTag: 2ee01764-a1cb-4908-8061-86b07c41b39a
+		sourceLineageTag: idcar_200m
+		summarizeBy: none
+		sourceColumn: idcar_200m
+
+		annotation SummarizationSetBy = Automatic
+
+	column territoire
+		dataType: string
+		lineageTag: 41677380-a32a-44bf-8d99-dbc6a33c2721
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column zone_test
+		dataType: string
+		lineageTag: 80b6bf91-3af5-4333-9b18-891b8487e104
+		sourceLineageTag: zone_test
+		summarizeBy: none
+		sourceColumn: zone_test
+
+		annotation SummarizationSetBy = Automatic
+
+	column population
+		dataType: double
+		lineageTag: 73ec3702-eaf2-4128-91d4-08c97fb1ad00
+		sourceLineageTag: population
+		summarizeBy: sum
+		sourceColumn: population
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column is_imputed
+		dataType: int64
+		formatString: 0
+		lineageTag: 71be0e7c-590c-4c31-8b28-e02940a45bdb
+		sourceLineageTag: is_imputed
+		summarizeBy: sum
+		sourceColumn: is_imputed
+
+		annotation SummarizationSetBy = Automatic
+
+	column p_lat
+		dataType: double
+		lineageTag: 3c74edc0-5382-4255-baa7-6fc20902226a
+		sourceLineageTag: p_lat
+		summarizeBy: sum
+		sourceColumn: p_lat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column p_lon
+		dataType: double
+		lineageTag: 1212ede1-e898-473c-804f-115e76035a95
+		sourceLineageTag: p_lon
+		summarizeBy: sum
+		sourceColumn: p_lon
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column statut_evaluation
+		dataType: string
+		lineageTag: 427aa1e2-456f-4d33-8c81-3a0dfd19d6d2
+		sourceLineageTag: statut_evaluation
+		summarizeBy: none
+		sourceColumn: statut_evaluation
+
+		annotation SummarizationSetBy = Automatic
+
+	column raccordement_reseau_m
+		dataType: double
+		lineageTag: 131bba71-c96c-49e8-b277-e9002230b212
+		sourceLineageTag: raccordement_reseau_m
+		summarizeBy: sum
+		sourceColumn: raccordement_reseau_m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_arrets_gtfs
+		dataType: int64
+		formatString: 0
+		lineageTag: 32b1f15f-2e7a-445f-b4c8-1fcebda23af6
+		sourceLineageTag: nb_arrets_gtfs
+		summarizeBy: sum
+		sourceColumn: nb_arrets_gtfs
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_stations_citiz_avec_vehicule
+		dataType: int64
+		formatString: 0
+		lineageTag: 35e45284-1fa8-4751-bfa4-821647ab59fe
+		sourceLineageTag: nb_stations_citiz_avec_vehicule
+		summarizeBy: sum
+		sourceColumn: nb_stations_citiz_avec_vehicule
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_velos_disponibles
+		dataType: int64
+		formatString: 0
+		lineageTag: 387fb34b-5368-4816-90b0-a3cfac4a6f7f
+		sourceLineageTag: nb_velos_disponibles
+		summarizeBy: sum
+		sourceColumn: nb_velos_disponibles
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_trottinettes_disponibles
+		dataType: int64
+		formatString: 0
+		lineageTag: eeaada09-474f-48c4-b41e-52e018519142
+		sourceLineageTag: nb_trottinettes_disponibles
+		summarizeBy: sum
+		sourceColumn: nb_trottinettes_disponibles
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_voitures_gbfs_disponibles
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a3cf767-31fd-4d1b-a811-acf725290978
+		sourceLineageTag: nb_voitures_gbfs_disponibles
+		summarizeBy: sum
+		sourceColumn: nb_voitures_gbfs_disponibles
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_scooters_type_incertain
+		dataType: int64
+		formatString: 0
+		lineageTag: d06cad69-4074-4c5d-99c8-327eb2a51fb3
+		sourceLineageTag: nb_scooters_type_incertain
+		summarizeBy: sum
+		sourceColumn: nb_scooters_type_incertain
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_deux_roues_motorises
+		dataType: int64
+		formatString: 0
+		lineageTag: 21445d77-de1e-402b-9bf1-c722819cacb3
+		sourceLineageTag: nb_deux_roues_motorises
+		summarizeBy: sum
+		sourceColumn: nb_deux_roues_motorises
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_stations_gbfs_non_verifiees
+		dataType: int64
+		formatString: 0
+		lineageTag: 90ffea51-2ad6-47d4-8e84-a0d997abf3f2
+		sourceLineageTag: nb_stations_gbfs_non_verifiees
+		summarizeBy: sum
+		sourceColumn: nb_stations_gbfs_non_verifiees
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_options_walk_5min
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ed9994c-c403-40da-8618-75f72e77ba4b
+		sourceLineageTag: nb_options_walk_5min
+		summarizeBy: sum
+		sourceColumn: nb_options_walk_5min
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_modes_walk_5min
+		dataType: int64
+		formatString: 0
+		lineageTag: 368073c4-bff5-496f-ba5f-a36ae6ba0c90
+		sourceLineageTag: nb_modes_walk_5min
+		summarizeBy: sum
+		sourceColumn: nb_modes_walk_5min
+
+		annotation SummarizationSetBy = Automatic
+
+	column couvert_walk_5min
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: aa1aa455-d51a-448f-82b9-12c0b02da49b
+		sourceLineageTag: couvert_walk_5min
+		summarizeBy: none
+		sourceColumn: couvert_walk_5min
+
+		annotation SummarizationSetBy = Automatic
+
+	column methodologie
+		dataType: string
+		lineageTag: 3a64808c-c7c8-4c62-9827-be3b648605ce
+		sourceLineageTag: methodologie
+		summarizeBy: none
+		sourceColumn: methodologie
+
+		annotation SummarizationSetBy = Automatic
+
+	partition france_access_walk_5min_strasbourg_centre_200m = entity
+		mode: directLake
+		source
+			entityName: france_access_walk_5min_strasbourg_centre_200m
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

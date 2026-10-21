@@ -1,0 +1,137 @@
+table france_stations_arrets_5min_population_desservie
+	lineageTag: 64f8df4c-5530-4062-81de-c8f449762832
+	sourceLineageTag: [gold].[france_stations_arrets_5min_population_desservie]
+
+	column unique_id
+		dataType: string
+		lineageTag: 7aa8fa17-a753-467b-9818-6d43ab15b059
+		sourceLineageTag: unique_id
+		summarizeBy: none
+		sourceColumn: unique_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column categorie
+		dataType: string
+		lineageTag: dce412d3-8690-4c30-a146-6b33892aa284
+		sourceLineageTag: categorie
+		summarizeBy: none
+		sourceColumn: categorie
+
+		annotation SummarizationSetBy = Automatic
+
+	column territoire
+		dataType: string
+		lineageTag: 99f7984e-f284-464a-a01c-16c9c68892ae
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		lineageTag: 8bf3ba67-6a8f-4d0b-9f20-7f01c42aaf9e
+		sourceLineageTag: latitude
+		summarizeBy: sum
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column longitude
+		dataType: double
+		lineageTag: 974aa8f2-331a-4d18-97be-ae8f30973990
+		sourceLineageTag: longitude
+		summarizeBy: sum
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_desservie_5min
+		dataType: double
+		lineageTag: faf3d1fe-f3a8-4e7a-9829-d412198f90a9
+		sourceLineageTag: population_desservie_5min
+		summarizeBy: sum
+		sourceColumn: population_desservie_5min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_carreaux_desservis
+		dataType: int64
+		formatString: 0
+		lineageTag: 594c64d6-b385-46e5-9a09-1083f3e3b982
+		sourceLineageTag: nb_carreaux_desservis
+		summarizeBy: sum
+		sourceColumn: nb_carreaux_desservis
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_tuiles_rattachees
+		dataType: int64
+		formatString: 0
+		lineageTag: c4addc3a-bd41-46de-9269-f74cd12698f8
+		sourceLineageTag: nb_tuiles_rattachees
+		summarizeBy: sum
+		sourceColumn: nb_tuiles_rattachees
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_tuiles_non_rattachees
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b941878-af9c-455d-a29f-90d34f2972e3
+		sourceLineageTag: nb_tuiles_non_rattachees
+		summarizeBy: sum
+		sourceColumn: nb_tuiles_non_rattachees
+
+		annotation SummarizationSetBy = Automatic
+
+	column nom
+		dataType: string
+		lineageTag: 5c777c1c-388d-45c5-bd60-f0ffbd0c9968
+		sourceLineageTag: nom
+		summarizeBy: none
+		sourceColumn: nom
+
+		annotation SummarizationSetBy = Automatic
+
+	column operateur
+		dataType: string
+		lineageTag: 578de984-6d8f-4f5d-bfc2-83a33b4ba2e0
+		sourceLineageTag: operateur
+		summarizeBy: none
+		sourceColumn: operateur
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_calcul
+		dataType: string
+		lineageTag: 773a0bf6-9e56-4006-8694-49e3b6e14832
+		sourceLineageTag: statut_calcul
+		summarizeBy: none
+		sourceColumn: statut_calcul
+
+		annotation SummarizationSetBy = Automatic
+
+	column methode
+		dataType: string
+		lineageTag: 95ba65e1-b2e0-40b7-80d3-ddb9fcf8ed82
+		sourceLineageTag: methode
+		summarizeBy: none
+		sourceColumn: methode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition france_stations_arrets_5min_population_desservie = entity
+		mode: directLake
+		source
+			entityName: france_stations_arrets_5min_population_desservie
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

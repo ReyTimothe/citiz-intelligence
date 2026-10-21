@@ -1,0 +1,41 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["DirectLake - lh_mobility_citiz"]
+
+annotation PBI_ProTooling = ["DirectLakeOnOneLakeInWeb","WebModelingEdit"]
+
+ref table citiz_32a_ancrages
+ref table citiz_32b_sites_qualifies
+ref table citiz_32c_features
+ref table citiz_32c_predictions
+ref table citiz_32d_desserte_candidates_200m
+ref table citiz_32d_gains_sites
+ref table citiz_32d_scenarios_budget
+ref table citiz_32d_sites_evaluer
+ref table citiz_32d_tuiles_candidates
+ref table citiz_32e_dashboard_kpi
+ref table citiz_33a_sites_enrichis
+ref table citiz_33b_sites_scoring
+ref table citiz_33c_scenarios_budget
+ref table citiz_33d_dashboard_kpi
+ref table france_access_mobility_proxy_200m
+ref table france_access_mobility_proxy_h3_carte
+ref table france_access_mobility_proxy_territoires
+ref table france_access_walk_5min_national_200m
+ref table france_access_walk_5min_national_bilan
+ref table france_access_walk_5min_national_h3_carte
+ref table france_access_walk_5min_national_h3_r7
+ref table france_access_walk_5min_national_h3_r8
+ref table france_access_walk_5min_strasbourg_centre_200m
+ref table france_stations_arrets_5min_population_desservie
+ref table france_stations_arrets_5min_population_desservie_clean
+ref table france_zones_prioritaires_h3_r7
+

@@ -1,0 +1,212 @@
+table france_access_mobility_proxy_200m
+	lineageTag: 793eac9b-abed-40bc-ae6f-2fffd981c61d
+	sourceLineageTag: [gold].[france_access_mobility_proxy_200m]
+
+	column idcar_200m
+		dataType: string
+		lineageTag: a53c987d-f864-4d29-93e7-59702d31d04d
+		sourceLineageTag: idcar_200m
+		summarizeBy: none
+		sourceColumn: idcar_200m
+
+		annotation SummarizationSetBy = Automatic
+
+	column territoire
+		dataType: string
+		lineageTag: 2868e909-69ee-40d6-9d5b-72a5d63b8f2d
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column population
+		dataType: double
+		lineageTag: 1af87c2e-e6f9-4a0d-a9d6-7e4f5659f001
+		sourceLineageTag: population
+		summarizeBy: sum
+		sourceColumn: population
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column is_imputed
+		dataType: int64
+		formatString: 0
+		lineageTag: c2e3652d-fbfb-4056-985a-b0aaeffc47a5
+		sourceLineageTag: is_imputed
+		summarizeBy: sum
+		sourceColumn: is_imputed
+
+		annotation SummarizationSetBy = Automatic
+
+	column p_lat
+		dataType: double
+		lineageTag: 9d21662f-9bea-4397-a55d-8083be291d8a
+		sourceLineageTag: p_lat
+		summarizeBy: sum
+		sourceColumn: p_lat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column p_lon
+		dataType: double
+		lineageTag: df0a88fa-8542-4e68-9380-819a13975e17
+		sourceLineageTag: p_lon
+		summarizeBy: sum
+		sourceColumn: p_lon
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_arrets_gtfs
+		dataType: int64
+		formatString: 0
+		lineageTag: 84d7eb9a-c3d0-47cd-830c-5c7d6d65fd30
+		sourceLineageTag: nb_arrets_gtfs
+		summarizeBy: sum
+		sourceColumn: nb_arrets_gtfs
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_stations_citiz_avec_vehicule
+		dataType: int64
+		formatString: 0
+		lineageTag: b28b5371-0a5b-4344-9602-2e8de094c753
+		sourceLineageTag: nb_stations_citiz_avec_vehicule
+		summarizeBy: sum
+		sourceColumn: nb_stations_citiz_avec_vehicule
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_velos_disponibles
+		dataType: int64
+		formatString: 0
+		lineageTag: bb866188-7456-4827-adb6-5947f46077fa
+		sourceLineageTag: nb_velos_disponibles
+		summarizeBy: sum
+		sourceColumn: nb_velos_disponibles
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_trottinettes_disponibles
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d9f3873-e919-4422-ac5c-008cd2892735
+		sourceLineageTag: nb_trottinettes_disponibles
+		summarizeBy: sum
+		sourceColumn: nb_trottinettes_disponibles
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_voitures_gbfs_disponibles
+		dataType: int64
+		formatString: 0
+		lineageTag: 7b3ed421-6a3a-41d8-ba72-f11880d6db7d
+		sourceLineageTag: nb_voitures_gbfs_disponibles
+		summarizeBy: sum
+		sourceColumn: nb_voitures_gbfs_disponibles
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_scooters_type_incertain
+		dataType: int64
+		formatString: 0
+		lineageTag: 624a9e63-c3e9-41a1-b007-4416fc672162
+		sourceLineageTag: nb_scooters_type_incertain
+		summarizeBy: sum
+		sourceColumn: nb_scooters_type_incertain
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_deux_roues_motorises
+		dataType: int64
+		formatString: 0
+		lineageTag: 210746f0-13a4-41b2-898f-fffc03ccddc4
+		sourceLineageTag: nb_deux_roues_motorises
+		summarizeBy: sum
+		sourceColumn: nb_deux_roues_motorises
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_stations_gbfs_non_verifiees
+		dataType: int64
+		formatString: 0
+		lineageTag: 7e7ca3a7-0cb6-4265-9950-afa1a03525b9
+		sourceLineageTag: nb_stations_gbfs_non_verifiees
+		summarizeBy: sum
+		sourceColumn: nb_stations_gbfs_non_verifiees
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_options_proxy_360m
+		dataType: int64
+		formatString: 0
+		lineageTag: c25b3352-ce7a-452c-ad98-3dc9bea9b5d8
+		sourceLineageTag: nb_options_proxy_360m
+		summarizeBy: sum
+		sourceColumn: nb_options_proxy_360m
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_modes_proxy_360m
+		dataType: int64
+		formatString: 0
+		lineageTag: b831971e-5294-4d91-8715-ddf6ac9e6e2a
+		sourceLineageTag: nb_modes_proxy_360m
+		summarizeBy: sum
+		sourceColumn: nb_modes_proxy_360m
+
+		annotation SummarizationSetBy = Automatic
+
+	column au_moins_une_option_proxy_360m
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: eee613a4-1eff-4ee7-8a97-625c9e8a09b0
+		sourceLineageTag: au_moins_une_option_proxy_360m
+		summarizeBy: none
+		sourceColumn: au_moins_une_option_proxy_360m
+
+		annotation SummarizationSetBy = Automatic
+
+	column au_moins_une_option_hors_gtfs_360m
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 37702b66-4d9c-4de7-b2a1-bc7978d42c28
+		sourceLineageTag: au_moins_une_option_hors_gtfs_360m
+		summarizeBy: none
+		sourceColumn: au_moins_une_option_hors_gtfs_360m
+
+		annotation SummarizationSetBy = Automatic
+
+	column methodologie
+		dataType: string
+		lineageTag: 29d0ebcb-b6b0-4623-bc92-318211b41830
+		sourceLineageTag: methodologie
+		summarizeBy: none
+		sourceColumn: methodologie
+
+		annotation SummarizationSetBy = Automatic
+
+	column rayon_m
+		dataType: double
+		lineageTag: 6b8f0135-e8e1-4962-852c-79fa5a1b40b3
+		sourceLineageTag: rayon_m
+		summarizeBy: sum
+		sourceColumn: rayon_m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition france_access_mobility_proxy_200m = entity
+		mode: directLake
+		source
+			entityName: france_access_mobility_proxy_200m
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

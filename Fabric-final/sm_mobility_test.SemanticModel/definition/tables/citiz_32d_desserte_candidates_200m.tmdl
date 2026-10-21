@@ -1,0 +1,110 @@
+table citiz_32d_desserte_candidates_200m
+	lineageTag: a1813041-3df8-42cf-b142-45e807130e50
+	sourceLineageTag: [gold].[citiz_32d_desserte_candidates_200m]
+
+	column idcar_200m
+		dataType: string
+		lineageTag: 54971210-7d8b-420c-9a7c-5089f3fa6f4e
+		sourceLineageTag: idcar_200m
+		summarizeBy: none
+		sourceColumn: idcar_200m
+
+		annotation SummarizationSetBy = Automatic
+
+	column candidate_id
+		dataType: string
+		lineageTag: 9c4f6470-4f60-483c-b7b9-970cab2d3a89
+		sourceLineageTag: candidate_id
+		summarizeBy: none
+		sourceColumn: candidate_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column distance_walk_m
+		dataType: double
+		lineageTag: 9c4cbe73-580e-495c-b6a9-4b4207d38787
+		sourceLineageTag: distance_walk_m
+		summarizeBy: sum
+		sourceColumn: distance_walk_m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population
+		dataType: double
+		lineageTag: e1e567a1-61bf-4309-ab6e-cfe3fdd5c0ef
+		sourceLineageTag: population
+		summarizeBy: sum
+		sourceColumn: population
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column statut_evaluation
+		dataType: string
+		lineageTag: 59444b0d-bbba-42a7-8718-22c953a4b09b
+		sourceLineageTag: statut_evaluation
+		summarizeBy: none
+		sourceColumn: statut_evaluation
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_options_walk_5min
+		dataType: int64
+		formatString: 0
+		lineageTag: 917faf84-6147-4a3d-8ec4-418de0120a64
+		sourceLineageTag: nb_options_walk_5min
+		summarizeBy: sum
+		sourceColumn: nb_options_walk_5min
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_stations_citiz_avec_vehicule
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e6c2da5-bf72-4dbf-9c6e-799270ffee96
+		sourceLineageTag: nb_stations_citiz_avec_vehicule
+		summarizeBy: sum
+		sourceColumn: nb_stations_citiz_avec_vehicule
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_voitures_gbfs_disponibles
+		dataType: int64
+		formatString: 0
+		lineageTag: fc233518-212e-482d-bfe3-76cfb28e2f57
+		sourceLineageTag: nb_voitures_gbfs_disponibles
+		summarizeBy: sum
+		sourceColumn: nb_voitures_gbfs_disponibles
+
+		annotation SummarizationSetBy = Automatic
+
+	column nouveau_1er_mode
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6aeddae8-2ce4-4a12-ae12-883573f7ae1b
+		sourceLineageTag: nouveau_1er_mode
+		summarizeBy: none
+		sourceColumn: nouveau_1er_mode
+
+		annotation SummarizationSetBy = Automatic
+
+	column nouvel_autopartage
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 823be791-805e-4bbd-a72a-945703fcef1e
+		sourceLineageTag: nouvel_autopartage
+		summarizeBy: none
+		sourceColumn: nouvel_autopartage
+
+		annotation SummarizationSetBy = Automatic
+
+	partition citiz_32d_desserte_candidates_200m = entity
+		mode: directLake
+		source
+			entityName: citiz_32d_desserte_candidates_200m
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

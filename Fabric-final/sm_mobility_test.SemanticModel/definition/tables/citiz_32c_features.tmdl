@@ -1,0 +1,173 @@
+table citiz_32c_features
+	lineageTag: 6c7fcd5a-a1bd-42ff-97f3-5d9140cbb79d
+	sourceLineageTag: [gold].[citiz_32c_features]
+
+	column point_id_ml
+		dataType: string
+		lineageTag: 19453537-1d61-4531-91fa-2fc46d2ca7ef
+		sourceLineageTag: point_id_ml
+		summarizeBy: none
+		sourceColumn: point_id_ml
+
+		annotation SummarizationSetBy = Automatic
+
+	column lat
+		dataType: double
+		lineageTag: dab3e79c-4c9c-4624-af4c-9e907a10db56
+		sourceLineageTag: lat
+		summarizeBy: sum
+		sourceColumn: lat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lon
+		dataType: double
+		lineageTag: 3cb57a99-448c-451b-a905-a984a044f375
+		sourceLineageTag: lon
+		summarizeBy: sum
+		sourceColumn: lon
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column y_population_5min
+		dataType: double
+		lineageTag: de230e92-2c0c-40c3-8541-8cc4f2c4d582
+		sourceLineageTag: y_population_5min
+		summarizeBy: sum
+		sourceColumn: y_population_5min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_direct_360
+		dataType: double
+		lineageTag: 8321f628-5c03-4ce9-9eb3-9e69597c8c32
+		sourceLineageTag: pop_direct_360
+		summarizeBy: sum
+		sourceColumn: pop_direct_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_direct_800
+		dataType: double
+		lineageTag: de6c1994-a19b-437d-b965-95c8ce763dfe
+		sourceLineageTag: pop_direct_800
+		summarizeBy: sum
+		sourceColumn: pop_direct_800
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_sans_option_360
+		dataType: double
+		lineageTag: 00833368-b761-4b7d-bf79-cc473246e855
+		sourceLineageTag: pop_sans_option_360
+		summarizeBy: sum
+		sourceColumn: pop_sans_option_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_sans_autopartage_360
+		dataType: double
+		lineageTag: 4d7cb166-7358-48b3-b8c7-da4434186254
+		sourceLineageTag: pop_sans_autopartage_360
+		summarizeBy: sum
+		sourceColumn: pop_sans_autopartage_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_sans_option_800
+		dataType: double
+		lineageTag: a5fd0807-a300-4f3e-b125-dc55c772fe76
+		sourceLineageTag: pop_sans_option_800
+		summarizeBy: sum
+		sourceColumn: pop_sans_option_800
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_imputee_360
+		dataType: double
+		lineageTag: 05cddc9d-06b4-4a6d-b56e-6540f8badc89
+		sourceLineageTag: pop_imputee_360
+		summarizeBy: sum
+		sourceColumn: pop_imputee_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column modes_pond_360
+		dataType: double
+		lineageTag: 8f1461a0-0570-4a90-a627-89f4439fcdf4
+		sourceLineageTag: modes_pond_360
+		summarizeBy: sum
+		sourceColumn: modes_pond_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_carreaux_360
+		dataType: int64
+		formatString: 0
+		lineageTag: 407bff2b-fde4-4003-8318-65ab8e99019e
+		sourceLineageTag: nb_carreaux_360
+		summarizeBy: sum
+		sourceColumn: nb_carreaux_360
+
+		annotation SummarizationSetBy = Automatic
+
+	column pct_sans_option_360
+		dataType: double
+		lineageTag: aa9999ac-c3e6-4d8d-9405-454767d02f37
+		sourceLineageTag: pct_sans_option_360
+		summarizeBy: sum
+		sourceColumn: pct_sans_option_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pct_imputation_360
+		dataType: double
+		lineageTag: 5fa72216-f4c4-4e00-821d-a3d6df6dacb0
+		sourceLineageTag: pct_imputation_360
+		summarizeBy: sum
+		sourceColumn: pct_imputation_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column modes_moy_360
+		dataType: double
+		lineageTag: 155a0939-575b-42cf-97c9-928550e0f35c
+		sourceLineageTag: modes_moy_360
+		summarizeBy: sum
+		sourceColumn: modes_moy_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition citiz_32c_features = entity
+		mode: directLake
+		source
+			entityName: citiz_32c_features
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

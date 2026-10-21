@@ -1,0 +1,95 @@
+table citiz_33d_dashboard_kpi
+	lineageTag: 06f590ae-9a71-4518-8741-e9b19834acd7
+	sourceLineageTag: [gold].[citiz_33d_dashboard_kpi]
+
+	column budget_eur
+		dataType: double
+		lineageTag: 053c15d7-48b6-4e8a-8e97-d7e9a881f6da
+		sourceLineageTag: budget_eur
+		summarizeBy: sum
+		sourceColumn: budget_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column territoire
+		dataType: string
+		lineageTag: fa2e7b3c-0d76-45e2-bd76-b9e16d14b775
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_stations
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b1fef6c-193a-414f-9bca-fd4e6e09a7a7
+		sourceLineageTag: nb_stations
+		summarizeBy: sum
+		sourceColumn: nb_stations
+
+		annotation SummarizationSetBy = Automatic
+
+	column cout_total_eur
+		dataType: double
+		lineageTag: d3d365ae-9e32-478c-bfc9-75bbe9cb35b5
+		sourceLineageTag: cout_total_eur
+		summarizeBy: sum
+		sourceColumn: cout_total_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cout_5_ans_total_eur
+		dataType: double
+		lineageTag: feb0ec8f-9938-44b3-9b0a-8466674a4eb4
+		sourceLineageTag: cout_5_ans_total_eur
+		summarizeBy: sum
+		sourceColumn: cout_5_ans_total_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column habitants_nouvelle_option
+		dataType: double
+		lineageTag: 5aa94e09-ba50-44b2-af97-06f0428e74e4
+		sourceLineageTag: habitants_nouvelle_option
+		summarizeBy: sum
+		sourceColumn: habitants_nouvelle_option
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column habitants_gagnant_autopartage
+		dataType: double
+		lineageTag: 6561f6d4-4768-454e-9300-e93c16272e1d
+		sourceLineageTag: habitants_gagnant_autopartage
+		summarizeBy: sum
+		sourceColumn: habitants_gagnant_autopartage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reservations_mois_scenario
+		dataType: int64
+		formatString: 0
+		lineageTag: aef2fae7-9f74-49c2-999a-021ba1ddcb2e
+		sourceLineageTag: reservations_mois_scenario
+		summarizeBy: sum
+		sourceColumn: reservations_mois_scenario
+
+		annotation SummarizationSetBy = Automatic
+
+	partition citiz_33d_dashboard_kpi = entity
+		mode: directLake
+		source
+			entityName: citiz_33d_dashboard_kpi
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

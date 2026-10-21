@@ -1,0 +1,94 @@
+table france_zones_prioritaires_h3_r7
+	lineageTag: bf660088-424c-4ab8-8a87-af700d6e2126
+	sourceLineageTag: [gold].[france_zones_prioritaires_h3_r7]
+
+	column territoire
+		dataType: string
+		lineageTag: 34bbe5d9-56fe-40da-8776-76aa29e533fb
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column h3_r7
+		dataType: string
+		lineageTag: b2291346-63d4-40ef-af8a-f9d0f2c26d60
+		sourceLineageTag: h3_r7
+		summarizeBy: none
+		sourceColumn: h3_r7
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_carreaux
+		dataType: int64
+		formatString: 0
+		lineageTag: 81f468a7-03ca-48b3-9efb-15e1e902f419
+		sourceLineageTag: nb_carreaux
+		summarizeBy: sum
+		sourceColumn: nb_carreaux
+
+		annotation SummarizationSetBy = Automatic
+
+	column population_totale
+		dataType: double
+		lineageTag: 40cfbf3a-5085-49ed-849c-60b481dca7bd
+		sourceLineageTag: population_totale
+		summarizeBy: sum
+		sourceColumn: population_totale
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_sans_option
+		dataType: double
+		lineageTag: b4b03df9-cfb0-4f3a-b0cd-64fb57d7587d
+		sourceLineageTag: population_sans_option
+		summarizeBy: sum
+		sourceColumn: population_sans_option
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_sans_mobilite_partagee
+		dataType: double
+		lineageTag: d79755f8-af28-41e0-93e3-fa8285eeeadf
+		sourceLineageTag: population_sans_mobilite_partagee
+		summarizeBy: sum
+		sourceColumn: population_sans_mobilite_partagee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_moins_deux_modes
+		dataType: double
+		lineageTag: b6d6a8df-73ee-40c3-a49a-3c5638c52902
+		sourceLineageTag: population_moins_deux_modes
+		summarizeBy: sum
+		sourceColumn: population_moins_deux_modes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_sans_option_pct
+		dataType: double
+		lineageTag: 7bc55448-2484-4622-95f6-da6d0dae3d1d
+		sourceLineageTag: taux_sans_option_pct
+		summarizeBy: sum
+		sourceColumn: taux_sans_option_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition france_zones_prioritaires_h3_r7 = entity
+		mode: directLake
+		source
+			entityName: france_zones_prioritaires_h3_r7
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

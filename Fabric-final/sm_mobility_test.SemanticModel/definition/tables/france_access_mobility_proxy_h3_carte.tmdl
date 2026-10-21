@@ -1,0 +1,182 @@
+table france_access_mobility_proxy_h3_carte
+	lineageTag: cc15be80-cb49-47d5-9a6a-2da80bbd8008
+	sourceLineageTag: [gold].[france_access_mobility_proxy_h3_carte]
+
+	column territoire
+		dataType: string
+		lineageTag: fa47ffde-8c50-492c-a221-e3dec84c96e5
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column h3_carte
+		dataType: string
+		lineageTag: d4d73f6a-164a-4dbb-a608-de48097221d8
+		sourceLineageTag: h3_carte
+		summarizeBy: none
+		sourceColumn: h3_carte
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_carreaux
+		dataType: int64
+		formatString: 0
+		lineageTag: dca08254-d739-40a8-92e0-0cc42c499e91
+		sourceLineageTag: nb_carreaux
+		summarizeBy: sum
+		sourceColumn: nb_carreaux
+
+		annotation SummarizationSetBy = Automatic
+
+	column population_totale
+		dataType: double
+		lineageTag: f18c77dd-6be0-45df-a286-dfd692b8ab5b
+		sourceLineageTag: population_totale
+		summarizeBy: sum
+		sourceColumn: population_totale
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_couverte
+		dataType: double
+		lineageTag: c8319cfc-b569-4628-aca1-cb2cd2999ae1
+		sourceLineageTag: population_couverte
+		summarizeBy: sum
+		sourceColumn: population_couverte
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_avec_bus_ou_transport
+		dataType: double
+		lineageTag: 64500a9d-35e8-498d-82ba-a2ff30a2dbbd
+		sourceLineageTag: population_avec_bus_ou_transport
+		summarizeBy: sum
+		sourceColumn: population_avec_bus_ou_transport
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_avec_citiz
+		dataType: double
+		lineageTag: c678986c-5e59-4c50-9947-6ed2d250345a
+		sourceLineageTag: population_avec_citiz
+		summarizeBy: sum
+		sourceColumn: population_avec_citiz
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_avec_velos
+		dataType: double
+		lineageTag: dba9926f-0ab2-4cce-a186-cf9c631ec69c
+		sourceLineageTag: population_avec_velos
+		summarizeBy: sum
+		sourceColumn: population_avec_velos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_avec_trottinettes
+		dataType: double
+		lineageTag: 66de26f2-54ba-4c6f-a558-0f1d41125320
+		sourceLineageTag: population_avec_trottinettes
+		summarizeBy: sum
+		sourceColumn: population_avec_trottinettes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_avec_voitures_gbfs
+		dataType: double
+		lineageTag: 22bf2f24-169e-4fcb-a8e0-44e47c023d6b
+		sourceLineageTag: population_avec_voitures_gbfs
+		summarizeBy: sum
+		sourceColumn: population_avec_voitures_gbfs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_avec_scooters_incertain
+		dataType: double
+		lineageTag: fae49a60-725b-46b7-93b8-1981eadf9b49
+		sourceLineageTag: population_avec_scooters_incertain
+		summarizeBy: sum
+		sourceColumn: population_avec_scooters_incertain
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_avec_deux_roues
+		dataType: double
+		lineageTag: 57312aba-2a1a-4bdc-90e5-882ee9b791ca
+		sourceLineageTag: population_avec_deux_roues
+		summarizeBy: sum
+		sourceColumn: population_avec_deux_roues
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_non_couverte
+		dataType: double
+		lineageTag: 93d6d657-fdbd-4c72-a22c-013e678ca3a3
+		sourceLineageTag: population_non_couverte
+		summarizeBy: sum
+		sourceColumn: population_non_couverte
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_couverture
+		dataType: double
+		lineageTag: 5fc5c67c-d1f1-4931-a99c-8023decefc0a
+		sourceLineageTag: taux_couverture
+		summarizeBy: sum
+		sourceColumn: taux_couverture
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column modes_moyens
+		dataType: double
+		lineageTag: 5c2d7954-e0a1-4744-a0ec-3ebab74a151a
+		sourceLineageTag: modes_moyens
+		summarizeBy: sum
+		sourceColumn: modes_moyens
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column options_moyennes
+		dataType: double
+		lineageTag: 450e3e93-b9f1-4d0b-9e0e-37df210c0d04
+		sourceLineageTag: options_moyennes
+		summarizeBy: sum
+		sourceColumn: options_moyennes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition france_access_mobility_proxy_h3_carte = entity
+		mode: directLake
+		source
+			entityName: france_access_mobility_proxy_h3_carte
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

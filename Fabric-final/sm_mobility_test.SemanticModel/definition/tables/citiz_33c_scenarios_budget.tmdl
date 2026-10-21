@@ -1,0 +1,297 @@
+table citiz_33c_scenarios_budget
+	lineageTag: c101534b-7090-43a4-b099-3642a0861cb8
+	sourceLineageTag: [gold].[citiz_33c_scenarios_budget]
+
+	column budget_eur
+		dataType: double
+		lineageTag: 7c86f2cb-1f0c-42aa-8300-f46c46c976e2
+		sourceLineageTag: budget_eur
+		summarizeBy: sum
+		sourceColumn: budget_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rang
+		dataType: int64
+		formatString: 0
+		lineageTag: d635dbe5-93eb-472b-8923-271240eb1927
+		sourceLineageTag: rang
+		summarizeBy: sum
+		sourceColumn: rang
+
+		annotation SummarizationSetBy = Automatic
+
+	column candidate_id
+		dataType: string
+		lineageTag: 5848b0ea-f2de-4c5a-8331-f0a226935009
+		sourceLineageTag: candidate_id
+		summarizeBy: none
+		sourceColumn: candidate_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column territoire
+		dataType: string
+		lineageTag: f5651ec9-bd74-4e93-ad1b-dcffbbeca0cb
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		lineageTag: 31159cfb-2e2f-4c27-9408-4b26c6934894
+		sourceLineageTag: latitude
+		summarizeBy: sum
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column longitude
+		dataType: double
+		lineageTag: 8c32dda5-14d0-4fc1-acf8-9de220f1ec84
+		sourceLineageTag: longitude
+		summarizeBy: sum
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nom_commune
+		dataType: string
+		lineageTag: c7910ad2-41bd-4527-9dd0-7efb349f1e69
+		sourceLineageTag: nom_commune
+		summarizeBy: none
+		sourceColumn: nom_commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_commune
+		dataType: string
+		lineageTag: 603ee11d-902b-4254-995d-727be509145a
+		sourceLineageTag: code_commune
+		summarizeBy: none
+		sourceColumn: code_commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column parking_type
+		dataType: string
+		lineageTag: a6010feb-2468-4f4b-9e46-ad2cc16c200e
+		sourceLineageTag: parking_type
+		summarizeBy: none
+		sourceColumn: parking_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column parking_access
+		dataType: string
+		lineageTag: a371a216-71dc-42cf-a9c3-80673ff16595
+		sourceLineageTag: parking_access
+		summarizeBy: none
+		sourceColumn: parking_access
+
+		annotation SummarizationSetBy = Automatic
+
+	column population_desservie_5min
+		dataType: double
+		lineageTag: b0af5a17-2df2-4087-8ad8-68b1b7b67a39
+		sourceLineageTag: population_desservie_5min
+		summarizeBy: sum
+		sourceColumn: population_desservie_5min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_nouvellement_couverte_marginale
+		dataType: double
+		lineageTag: 68c9029f-30cb-4454-841f-7157c8a87367
+		sourceLineageTag: population_nouvellement_couverte_marginale
+		summarizeBy: sum
+		sourceColumn: population_nouvellement_couverte_marginale
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_gagnant_autopartage_marginale
+		dataType: double
+		lineageTag: c56ad610-da3e-4d32-b0c6-f9bc0165d2ac
+		sourceLineageTag: population_gagnant_autopartage_marginale
+		summarizeBy: sum
+		sourceColumn: population_gagnant_autopartage_marginale
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cout_1ere_annee_eur
+		dataType: double
+		lineageTag: be3554ab-8f89-471a-98dd-d029ea8d484f
+		sourceLineageTag: cout_1ere_annee_eur
+		summarizeBy: sum
+		sourceColumn: cout_1ere_annee_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cout_5_ans_eur
+		dataType: double
+		lineageTag: 0fdb7d15-96c3-49ab-b9c9-a3b43b4b77f1
+		sourceLineageTag: cout_5_ans_eur
+		summarizeBy: sum
+		sourceColumn: cout_5_ans_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cout_consomme_budget_eur
+		dataType: double
+		lineageTag: 3a19ecb6-4de7-4174-8df6-443676846d16
+		sourceLineageTag: cout_consomme_budget_eur
+		summarizeBy: sum
+		sourceColumn: cout_consomme_budget_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column distance_arbre_osm_m
+		dataType: double
+		lineageTag: ead96144-0656-4e77-b69d-960c3bae6f1c
+		sourceLineageTag: distance_arbre_osm_m
+		summarizeBy: sum
+		sourceColumn: distance_arbre_osm_m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column distance_citiz_existante_m
+		dataType: double
+		lineageTag: c756cc42-b531-4f02-86f2-284c72c3de6c
+		sourceLineageTag: distance_citiz_existante_m
+		summarizeBy: sum
+		sourceColumn: distance_citiz_existante_m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ml_population_predite
+		dataType: double
+		lineageTag: 03dd8ed1-3418-4d2e-b39a-4a6c225d2c65
+		sourceLineageTag: ml_population_predite
+		summarizeBy: sum
+		sourceColumn: ml_population_predite
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ml_hors_distribution
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: fc2ea98e-979d-4e46-bf9b-8fc0a3c4651c
+		sourceLineageTag: ml_hors_distribution
+		summarizeBy: none
+		sourceColumn: ml_hors_distribution
+
+		annotation SummarizationSetBy = Automatic
+
+	column controle_terrain
+		dataType: string
+		lineageTag: f56e3dfb-39b1-492b-b77f-dfa7465f9a4f
+		sourceLineageTag: controle_terrain
+		summarizeBy: none
+		sourceColumn: controle_terrain
+
+		annotation SummarizationSetBy = Automatic
+
+	column taux_ssmsi_vols_vehicules_commune
+		dataType: double
+		lineageTag: f44e5623-580b-4973-a128-05a8510a6f15
+		sourceLineageTag: taux_ssmsi_vols_vehicules_commune
+		summarizeBy: sum
+		sourceColumn: taux_ssmsi_vols_vehicules_commune
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_ssmsi_degradations_commune
+		dataType: double
+		lineageTag: 96f810e9-e6c7-4980-82cf-a6b84bbbf13f
+		sourceLineageTag: taux_ssmsi_degradations_commune
+		summarizeBy: sum
+		sourceColumn: taux_ssmsi_degradations_commune
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column source_securite
+		dataType: string
+		lineageTag: 89fa3a87-fc47-4814-aaf9-05b9e66f527f
+		sourceLineageTag: source_securite
+		summarizeBy: none
+		sourceColumn: source_securite
+
+		annotation SummarizationSetBy = Automatic
+
+	column utilisateurs_mois_bas
+		dataType: int64
+		formatString: 0
+		lineageTag: 88b0522d-2bcb-4ca2-b765-eb65fa80371c
+		sourceLineageTag: utilisateurs_mois_bas
+		summarizeBy: sum
+		sourceColumn: utilisateurs_mois_bas
+
+		annotation SummarizationSetBy = Automatic
+
+	column utilisateurs_mois_central
+		dataType: int64
+		formatString: 0
+		lineageTag: 132c8773-5e20-4f32-ab0d-a4f80dcf0b9f
+		sourceLineageTag: utilisateurs_mois_central
+		summarizeBy: sum
+		sourceColumn: utilisateurs_mois_central
+
+		annotation SummarizationSetBy = Automatic
+
+	column utilisateurs_mois_haut
+		dataType: int64
+		formatString: 0
+		lineageTag: e38c564e-3efa-48ee-a72d-f2fd3b876d0b
+		sourceLineageTag: utilisateurs_mois_haut
+		summarizeBy: sum
+		sourceColumn: utilisateurs_mois_haut
+
+		annotation SummarizationSetBy = Automatic
+
+	column reservations_mois_central_scenario
+		dataType: int64
+		formatString: 0
+		lineageTag: 99749b6d-c05e-41f5-b43e-cf92bafff948
+		sourceLineageTag: reservations_mois_central_scenario
+		summarizeBy: sum
+		sourceColumn: reservations_mois_central_scenario
+
+		annotation SummarizationSetBy = Automatic
+
+	partition citiz_33c_scenarios_budget = entity
+		mode: directLake
+		source
+			entityName: citiz_33c_scenarios_budget
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

@@ -1,0 +1,433 @@
+table citiz_32d_gains_sites
+	lineageTag: 52bc5041-5743-42a4-b502-7c84a67286fb
+	sourceLineageTag: [gold].[citiz_32d_gains_sites]
+
+	column candidate_id
+		dataType: string
+		lineageTag: 069e60aa-3ce3-4653-bfaa-415c98f9c1dc
+		sourceLineageTag: candidate_id
+		summarizeBy: none
+		sourceColumn: candidate_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column anchor_id
+		dataType: string
+		lineageTag: f79cb87a-4f59-4831-8f84-e2b997c63dff
+		sourceLineageTag: anchor_id
+		summarizeBy: none
+		sourceColumn: anchor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column territoire
+		dataType: string
+		lineageTag: 00fafcf4-dc0e-4b33-9557-461d74d4b03c
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column candidate_lat
+		dataType: double
+		lineageTag: d3092724-ad2a-4825-89ae-5b2672ce3940
+		sourceLineageTag: candidate_lat
+		summarizeBy: sum
+		sourceColumn: candidate_lat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column candidate_lon
+		dataType: double
+		lineageTag: 569125a1-5f6f-4683-8543-948ff45abc79
+		sourceLineageTag: candidate_lon
+		summarizeBy: sum
+		sourceColumn: candidate_lon
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column anchor_lat
+		dataType: double
+		lineageTag: 86d39d08-d4b0-47aa-a3a6-4c66b0eea6ab
+		sourceLineageTag: anchor_lat
+		summarizeBy: sum
+		sourceColumn: anchor_lat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column anchor_lon
+		dataType: double
+		lineageTag: 0df03f9c-de24-4b49-8ee4-1dc1d8ff22f4
+		sourceLineageTag: anchor_lon
+		summarizeBy: sum
+		sourceColumn: anchor_lon
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column h3_r8
+		dataType: string
+		lineageTag: 62262a5e-cf36-4fae-82fb-fae09381d083
+		sourceLineageTag: h3_r8
+		summarizeBy: none
+		sourceColumn: h3_r8
+
+		annotation SummarizationSetBy = Automatic
+
+	column osm_id
+		dataType: string
+		lineageTag: 5c2eeac1-458e-4769-b768-9114a175570a
+		sourceLineageTag: osm_id
+		summarizeBy: none
+		sourceColumn: osm_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column parking_type
+		dataType: string
+		lineageTag: 01771706-5d45-4ee8-afdc-31b01cff130d
+		sourceLineageTag: parking_type
+		summarizeBy: none
+		sourceColumn: parking_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column parking_access
+		dataType: string
+		lineageTag: acac56fa-0370-4d5a-b752-1e2769f75bc5
+		sourceLineageTag: parking_access
+		summarizeBy: none
+		sourceColumn: parking_access
+
+		annotation SummarizationSetBy = Automatic
+
+	column parking_capacity_raw
+		dataType: string
+		lineageTag: 1f282a00-7a64-454d-b449-314125ace4c8
+		sourceLineageTag: parking_capacity_raw
+		summarizeBy: none
+		sourceColumn: parking_capacity_raw
+
+		annotation SummarizationSetBy = Automatic
+
+	column distance_au_parking_depuis_ancrage_m
+		dataType: double
+		lineageTag: d76be660-45ef-4e6d-8c06-98be823bcd8c
+		sourceLineageTag: distance_au_parking_depuis_ancrage_m
+		summarizeBy: sum
+		sourceColumn: distance_au_parking_depuis_ancrage_m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column distance_arbre_osm_m
+		dataType: double
+		lineageTag: 56d71529-6922-43d7-8e41-765c272849bf
+		sourceLineageTag: distance_arbre_osm_m
+		summarizeBy: sum
+		sourceColumn: distance_arbre_osm_m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column arbre_osm_a_moins_15m
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d81fccea-d21f-4aa8-8a10-3cdb5264e3b2
+		sourceLineageTag: arbre_osm_a_moins_15m
+		summarizeBy: none
+		sourceColumn: arbre_osm_a_moins_15m
+
+		annotation SummarizationSetBy = Automatic
+
+	column arbres_source
+		dataType: string
+		lineageTag: b677cef6-a037-4010-a6e0-5a8d55020be8
+		sourceLineageTag: arbres_source
+		summarizeBy: none
+		sourceColumn: arbres_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column distance_citiz_existante_m
+		dataType: double
+		lineageTag: c549ed72-6dce-4757-aa75-0a8601f5ab40
+		sourceLineageTag: distance_citiz_existante_m
+		summarizeBy: sum
+		sourceColumn: distance_citiz_existante_m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column site_reel_confirme
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9509ffec-d7d8-4593-8c48-fd8a49c9fba4
+		sourceLineageTag: site_reel_confirme
+		summarizeBy: none
+		sourceColumn: site_reel_confirme
+
+		annotation SummarizationSetBy = Automatic
+
+	column parking_repertorie_osm
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4b56f49a-0420-470d-8d8a-751e7172bc50
+		sourceLineageTag: parking_repertorie_osm
+		summarizeBy: none
+		sourceColumn: parking_repertorie_osm
+
+		annotation SummarizationSetBy = Automatic
+
+	column besoin_validation_terrain
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9403aee0-67ee-4df6-8653-91309226c5e6
+		sourceLineageTag: besoin_validation_terrain
+		summarizeBy: none
+		sourceColumn: besoin_validation_terrain
+
+		annotation SummarizationSetBy = Automatic
+
+	column montant_1ere_annee_hypothese_eur
+		dataType: double
+		lineageTag: 8b7d144f-dfa3-4574-9809-186f43d0ea56
+		sourceLineageTag: montant_1ere_annee_hypothese_eur
+		summarizeBy: sum
+		sourceColumn: montant_1ere_annee_hypothese_eur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column score_besoin
+		dataType: double
+		lineageTag: 9f2ebb4d-9aad-4ef9-b379-e02a1e68f703
+		sourceLineageTag: score_besoin
+		summarizeBy: sum
+		sourceColumn: score_besoin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_r8
+		dataType: double
+		lineageTag: ffd41f24-4540-4446-b58b-439ab4a187c7
+		sourceLineageTag: population_r8
+		summarizeBy: sum
+		sourceColumn: population_r8
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sans_option_r8
+		dataType: double
+		lineageTag: 64f30b6c-38db-4dd3-936c-cc7d6e3613d8
+		sourceLineageTag: sans_option_r8
+		summarizeBy: sum
+		sourceColumn: sans_option_r8
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sans_autopartage_r8
+		dataType: double
+		lineageTag: a0b9afea-42a8-422d-9e46-23999c4408bf
+		sourceLineageTag: sans_autopartage_r8
+		summarizeBy: sum
+		sourceColumn: sans_autopartage_r8
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column part_population_imputee
+		dataType: double
+		lineageTag: dc6661d5-3e07-473f-82bf-d281e7b4ae1a
+		sourceLineageTag: part_population_imputee
+		summarizeBy: sum
+		sourceColumn: part_population_imputee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column risque_securite
+		dataType: double
+		lineageTag: 00077dbf-22a5-4949-bf17-bd108df3a021
+		sourceLineageTag: risque_securite
+		summarizeBy: sum
+		sourceColumn: risque_securite
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column risque_securite_source
+		dataType: string
+		lineageTag: 097173c9-5465-4b76-a019-79644e8f3949
+		sourceLineageTag: risque_securite_source
+		summarizeBy: none
+		sourceColumn: risque_securite_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column site_priorite
+		dataType: string
+		lineageTag: 8825456f-aa89-4297-8095-2fdf67349ced
+		sourceLineageTag: site_priorite
+		summarizeBy: none
+		sourceColumn: site_priorite
+
+		annotation SummarizationSetBy = Automatic
+
+	column population_predite_ml_5min
+		dataType: double
+		lineageTag: 55562b00-7bab-4342-8301-9c9a6c521212
+		sourceLineageTag: population_predite_ml_5min
+		summarizeBy: sum
+		sourceColumn: population_predite_ml_5min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hors_distribution_population
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 158fa78d-d060-425f-a20c-ab9cdddf9a2f
+		sourceLineageTag: hors_distribution_population
+		summarizeBy: none
+		sourceColumn: hors_distribution_population
+
+		annotation SummarizationSetBy = Automatic
+
+	column pop_direct_360
+		dataType: double
+		lineageTag: 60ef4413-24ca-4154-9652-80fc3f07a7fb
+		sourceLineageTag: pop_direct_360
+		summarizeBy: sum
+		sourceColumn: pop_direct_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_direct_800
+		dataType: double
+		lineageTag: 72693370-a86e-49c9-9b02-da519e9ae7db
+		sourceLineageTag: pop_direct_800
+		summarizeBy: sum
+		sourceColumn: pop_direct_800
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_sans_option_360
+		dataType: double
+		lineageTag: 1a3658cb-90f3-432d-b0f2-69ea7b737d57
+		sourceLineageTag: pop_sans_option_360
+		summarizeBy: sum
+		sourceColumn: pop_sans_option_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_sans_autopartage_360
+		dataType: double
+		lineageTag: 775422cb-7306-4eaf-9aa6-fe59f4cbe3c9
+		sourceLineageTag: pop_sans_autopartage_360
+		summarizeBy: sum
+		sourceColumn: pop_sans_autopartage_360
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ml_priority
+		dataType: double
+		lineageTag: 8a278d0f-54d2-49e3-bb82-828586faf13d
+		sourceLineageTag: ml_priority
+		summarizeBy: sum
+		sourceColumn: ml_priority
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_desservie_reseau_5min
+		dataType: double
+		lineageTag: d39f88f9-1669-40a0-b888-f068d69e36b6
+		sourceLineageTag: population_desservie_reseau_5min
+		summarizeBy: sum
+		sourceColumn: population_desservie_reseau_5min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_nouvellement_couverte
+		dataType: double
+		lineageTag: 05ff1280-3372-4ce6-bdec-5bf373358a4b
+		sourceLineageTag: population_nouvellement_couverte
+		summarizeBy: sum
+		sourceColumn: population_nouvellement_couverte
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_gagnant_autopartage
+		dataType: double
+		lineageTag: 640fe94b-e5b7-417b-aa15-47e31353e948
+		sourceLineageTag: population_gagnant_autopartage
+		summarizeBy: sum
+		sourceColumn: population_gagnant_autopartage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column carreaux_desservis
+		dataType: int64
+		formatString: 0
+		lineageTag: b19b6808-aacd-4afd-8402-4fdb7f2de60b
+		sourceLineageTag: carreaux_desservis
+		summarizeBy: sum
+		sourceColumn: carreaux_desservis
+
+		annotation SummarizationSetBy = Automatic
+
+	column rattachement_valide
+		dataType: int64
+		formatString: 0
+		lineageTag: 152def38-cde0-4cdf-923f-e54463e3fff5
+		sourceLineageTag: rattachement_valide
+		summarizeBy: sum
+		sourceColumn: rattachement_valide
+
+		annotation SummarizationSetBy = Automatic
+
+	partition citiz_32d_gains_sites = entity
+		mode: directLake
+		source
+			entityName: citiz_32d_gains_sites
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

@@ -1,0 +1,61 @@
+table citiz_32d_tuiles_candidates
+	lineageTag: 038b8921-b482-4768-8dac-a0aefbb044d1
+	sourceLineageTag: [gold].[citiz_32d_tuiles_candidates]
+
+	column candidate_id
+		dataType: string
+		lineageTag: 8b525efd-5b29-43ab-ba9c-d5cbfb4aa9d3
+		sourceLineageTag: candidate_id
+		summarizeBy: none
+		sourceColumn: candidate_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tile_id
+		dataType: string
+		lineageTag: 00fbb116-6009-4583-a780-a072cd8db981
+		sourceLineageTag: tile_id
+		summarizeBy: none
+		sourceColumn: tile_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column bucket_id
+		dataType: int64
+		formatString: 0
+		lineageTag: aea8a0a4-4592-4e14-b8a3-e3967d627b38
+		sourceLineageTag: bucket_id
+		summarizeBy: sum
+		sourceColumn: bucket_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		lineageTag: 4e4d07c2-3d92-4ab5-b607-a0fef524645d
+		sourceLineageTag: latitude
+		summarizeBy: sum
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column longitude
+		dataType: double
+		lineageTag: 03f1376e-40d5-4902-a8aa-375a31992a22
+		sourceLineageTag: longitude
+		summarizeBy: sum
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition citiz_32d_tuiles_candidates = entity
+		mode: directLake
+		source
+			entityName: citiz_32d_tuiles_candidates
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

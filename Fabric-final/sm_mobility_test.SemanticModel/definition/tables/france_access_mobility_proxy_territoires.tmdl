@@ -1,0 +1,96 @@
+table france_access_mobility_proxy_territoires
+	lineageTag: cec95135-693f-42c5-a09a-447d5db89a17
+	sourceLineageTag: [gold].[france_access_mobility_proxy_territoires]
+
+	column territoire
+		dataType: string
+		lineageTag: 4f60acae-ec49-428f-9ec5-5f5c6b7ac070
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_carreaux
+		dataType: int64
+		formatString: 0
+		lineageTag: 80e7d3e6-cde0-4c01-97fe-5f064cc1f083
+		sourceLineageTag: nb_carreaux
+		summarizeBy: sum
+		sourceColumn: nb_carreaux
+
+		annotation SummarizationSetBy = Automatic
+
+	column population_totale
+		dataType: double
+		lineageTag: fa8a66f0-cfba-48ce-9175-d199b5e14957
+		sourceLineageTag: population_totale
+		summarizeBy: sum
+		sourceColumn: population_totale
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_avec_option_proxy
+		dataType: double
+		lineageTag: a89f9869-b06e-4417-95b2-26c0d60b1bce
+		sourceLineageTag: population_avec_option_proxy
+		summarizeBy: sum
+		sourceColumn: population_avec_option_proxy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_avec_mobilite_partagee
+		dataType: double
+		lineageTag: 8085e348-e629-459c-864e-ae346f8cfaf7
+		sourceLineageTag: population_avec_mobilite_partagee
+		summarizeBy: sum
+		sourceColumn: population_avec_mobilite_partagee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_population_couverte_pct
+		dataType: double
+		lineageTag: d61f3c73-6e5f-4850-b4a0-377920e3bff5
+		sourceLineageTag: taux_population_couverte_pct
+		summarizeBy: sum
+		sourceColumn: taux_population_couverte_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column options_moyennes_par_habitant
+		dataType: double
+		lineageTag: eb0d7eea-e3d6-41af-b77e-78022a005e68
+		sourceLineageTag: options_moyennes_par_habitant
+		summarizeBy: sum
+		sourceColumn: options_moyennes_par_habitant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column modes_moyens_par_habitant
+		dataType: double
+		lineageTag: 753944ee-7921-4660-b472-2bb3e907b9cf
+		sourceLineageTag: modes_moyens_par_habitant
+		summarizeBy: sum
+		sourceColumn: modes_moyens_par_habitant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition france_access_mobility_proxy_territoires = entity
+		mode: directLake
+		source
+			entityName: france_access_mobility_proxy_territoires
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+

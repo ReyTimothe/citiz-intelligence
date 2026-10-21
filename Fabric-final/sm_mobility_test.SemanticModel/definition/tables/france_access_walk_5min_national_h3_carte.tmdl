@@ -1,0 +1,138 @@
+table france_access_walk_5min_national_h3_carte
+	lineageTag: af135341-f6bf-4fc9-80b9-0a7b5395e06e
+	sourceLineageTag: [gold].[france_access_walk_5min_national_h3_carte]
+
+	column territoire
+		dataType: string
+		lineageTag: fc685a25-33a5-4c16-8d18-2898fe783f72
+		sourceLineageTag: territoire
+		summarizeBy: none
+		sourceColumn: territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column h3_cell
+		dataType: string
+		lineageTag: 34cf35fc-45d1-49a7-9f75-d9332f27037d
+		sourceLineageTag: h3_cell
+		summarizeBy: none
+		sourceColumn: h3_cell
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_carreaux
+		dataType: int64
+		formatString: 0
+		lineageTag: e8d95aa7-98be-4d6b-8143-7239617d0421
+		sourceLineageTag: nb_carreaux
+		summarizeBy: sum
+		sourceColumn: nb_carreaux
+
+		annotation SummarizationSetBy = Automatic
+
+	column population_totale
+		dataType: double
+		lineageTag: e8841064-b9e9-48cd-94d2-315203e65234
+		sourceLineageTag: population_totale
+		summarizeBy: sum
+		sourceColumn: population_totale
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_evaluee
+		dataType: double
+		lineageTag: cab13139-6f6a-4951-ba89-d51675c6d389
+		sourceLineageTag: population_evaluee
+		summarizeBy: sum
+		sourceColumn: population_evaluee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_couverte
+		dataType: double
+		lineageTag: 742b8466-1387-404c-9412-10a60fcaffa5
+		sourceLineageTag: population_couverte
+		summarizeBy: sum
+		sourceColumn: population_couverte
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_evaluee_sans_option
+		dataType: double
+		lineageTag: 3c4f6667-b5a2-44ce-92a4-b1ba8727d95a
+		sourceLineageTag: population_evaluee_sans_option
+		summarizeBy: sum
+		sourceColumn: population_evaluee_sans_option
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column modes_ponderes
+		dataType: double
+		lineageTag: 4e4c1687-ae40-4d30-95f2-95a9954d3d93
+		sourceLineageTag: modes_ponderes
+		summarizeBy: sum
+		sourceColumn: modes_ponderes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column options_ponderees
+		dataType: double
+		lineageTag: af6b7013-b6ef-428d-8af9-c22ba79350bb
+		sourceLineageTag: options_ponderees
+		summarizeBy: sum
+		sourceColumn: options_ponderees
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_couverture_pct
+		dataType: double
+		lineageTag: ce796f2e-2098-444c-854b-150d1f4c03bf
+		sourceLineageTag: taux_couverture_pct
+		summarizeBy: sum
+		sourceColumn: taux_couverture_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column modes_moyens_par_habitant
+		dataType: double
+		lineageTag: dfafeda2-0e18-46af-a849-a838ec566019
+		sourceLineageTag: modes_moyens_par_habitant
+		summarizeBy: sum
+		sourceColumn: modes_moyens_par_habitant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column options_moyennes_par_habitant
+		dataType: double
+		lineageTag: 7b97f874-8bd6-42af-aa7f-44988bac88aa
+		sourceLineageTag: options_moyennes_par_habitant
+		summarizeBy: sum
+		sourceColumn: options_moyennes_par_habitant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition france_access_walk_5min_national_h3_carte = entity
+		mode: directLake
+		source
+			entityName: france_access_walk_5min_national_h3_carte
+			schemaName: gold
+			expressionSource: 'DirectLake - lh_mobility_citiz'
+
